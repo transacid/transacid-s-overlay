@@ -1,0 +1,13 @@
+diff --git a/chrome/chrome.gyp b/chrome/chrome.gyp
+index 01876fb..41e086d 100644
+--- a/chrome/chrome.gyp
++++ b/chrome/chrome.gyp
+@@ -1113,7 +1113,7 @@
+             '../build/linux/system.gyp:gtk',
+           ],
+         }],
+-        ['OS=="linux" and chromeos==0 and target_arch!="arm"', {
++        ['OS=="linux" and chromeos==1 and target_arch!="arm"', {
+           'link_settings': {
+             'libraries': [
+               '-lcups',
